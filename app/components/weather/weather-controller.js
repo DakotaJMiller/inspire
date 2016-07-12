@@ -1,10 +1,13 @@
 (function (){
 	
 	var wc = this;
-	var weatherService = new WeatherService();
+	var NewWeatherService = new WeatherService();
 	
-	weatherService.getWeather(function(weather){
-		console.log(weather);
+	NewWeatherService.getWeather(function(res){
+		
+		$('#weather').append('<p>' + ((res.main.temp - 273) *  1.8 + 32).toFixed(1) + '°F' + "</p>")
+		
+
 		//What can you do with this weather object?
 	})
 	

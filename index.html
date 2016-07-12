@@ -4,21 +4,50 @@
 	<meta charset="UTF-8">
 	<title>Inspire</title>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 
 <body id="body">
-	<div id="weather">
-
+<div class="section">
+	<div class="container" id ="weather-contain">
+		<div class="row">
+			<div class = "col-xs-offset-11 col-xs-1">
+				<div class="weather-image">
+					<img src="http://www.how-to-draw-cartoons-online.com/image-files/cartoon_clouds.gif">
+					<div id ="weather">
+				</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<div id="quote">
-
+</div>
+<div class="section">
+	<div class="container" id = "quote-container">
+		<div class="row">
+			<div class = "col-xs-12">
+				<div id="quote">
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+<div class="section">
+	<div class="container" id= "todos-container">
+		<div class="row">
+			<div class="col-md-2 col-md-offset-10" id = "form-col">
+   		 		<form class = "form-todo">
+        		<input type = "text" name ="newInput">
+				<button type = "submit" id = "add">Add Item</button>
+        		</form>
+				<h3 id = "results"></h3>
+				<div id="todos">
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<div id="todo">
-
-	</div>
-
+</div>
 
 
 
