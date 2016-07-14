@@ -38,6 +38,8 @@
                 }
             }
            $(this).remove(); 
+               var foo = document.getElementById('results');
+            foo.innerHTML = 'You have ' + todos.length + ' thing(s) left to do!';
             console.log(text)
         
            });
